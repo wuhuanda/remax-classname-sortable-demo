@@ -2,7 +2,6 @@ import React from "react";
 import { View } from "remax/wechat";
 import merge from "lodash/merge";
 import PropTypes from "prop-types";
-import PressView from "@/components/PressView";
 import classNames from "classnames";
 
 import styles from "./style.module.scss";
@@ -36,25 +35,18 @@ function Button({
   );
 
   return (
-    <PressView
-      disabled={isDisabled}
-      onClick={onClick}
-      onGetUserInfo={onGetUserInfo}
-      {...restAttr}
+    <View
+      style={buttonStyle}
+      className={classNames(
+        type === Solid && styles.buttonSolid,
+        type === Outline && styles.buttonOutline,
+        size === "normal" ? styles.buttonNormal : styles.buttonSmall,
+        styles.button,
+        className
+      )}
     >
-      <View
-        style={buttonStyle}
-        className={classNames(
-          type === Solid && styles.buttonSolid,
-          type === Outline && styles.buttonOutline,
-          size === "normal" ? styles.buttonNormal : styles.buttonSmall,
-          styles.button,
-          className
-        )}
-      >
-        {children}
-      </View>
-    </PressView>
+      {children}
+    </View>
   );
 }
 

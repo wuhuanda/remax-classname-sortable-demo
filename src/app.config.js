@@ -1,7 +1,6 @@
 module.exports = {
   pages: [
-    "pages/launch/index",
-    "pages/home/gonglue/index",
+    "pages/page2/index",
     "pages/index/index",
   ],
   window: {

@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "remax-classname-sortable-demo",
 	"description": "",
-	"appid": "wx7b1120a6006b8971",
+	"appid": "",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
