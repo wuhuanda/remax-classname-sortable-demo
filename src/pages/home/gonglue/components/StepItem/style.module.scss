@@ -1,0 +1,65 @@
+@import "../.././../../../app.scss";
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.stepItem {
+  position: relative;
+
+  @include flexRow();
+}
+
+.stepItemContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.stepIcon {
+  background-color: #ffbd00;
+  margin-top: 15px;
+  margin-right: 21px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  z-index: 99;
+}
+
+.stepItemTail {
+  position: absolute;
+  left: 8.5px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-left: 1px dashed #d9d9d9;
+  background-color: transparent;
+}
+
+.gongLueTitle {
+  font-size: $FontSizeXL;
+  width: 491px;
+  color: #0c0c0c;
+  font-weight: bold;
+  letter-spacing: -10;
+
+  @include single-line-ellipsis();
+}
+
+.gongLueContentContainer {
+  font-size: $FontSizeS;
+  color: #0c0c0c;
+  line-height: $FontSizeXXL;
+  word-break: break-all;
+}
+
+.gongLueButton {
+  width: 144px;
+  height: 44px;
+  color: #0c0c0c;
+  font-size: $FontSizeS;
+  margin-left: 37rpx;
+  padding: 0;
+  background: tomato;
+}

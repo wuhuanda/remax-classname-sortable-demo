@@ -1,0 +1,45 @@
+@import '../../app.scss';
+
+$buttonSmallH: 44px;
+$buttonNormalH: 78px;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  color: $BlackS;
+  box-sizing: border-box;
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.buttonSmall {
+  padding: 11px 20px;
+  height: $buttonSmallH;
+  font-size: $FontSizeS;
+  border-radius: $buttonSmallH / 2;
+}
+
+.buttonNormal {
+  padding: 26px 44px;
+  height: $buttonNormalH;
+  font-size: $FontSizeL;
+  border-radius: $buttonNormalH / 2;
+}
+
+// 实心按钮
+.buttonSolid {
+  background: $Primary;
+}
+
+// 镂空按钮
+.buttonOutline {
+  background: transparent;
+  border: 1PX solid $Primary;
+}
+
+.loadingWrapper {
+  margin-right: 10px;
+}
