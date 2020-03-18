@@ -1,6 +1,6 @@
 import * as React from "react";
 import { View } from "remax/wechat";
-import Button from "../../components/Button";
+import TestCom from "@/components/TestCom";
 
 import styles from "./index.module.css";
 
@@ -8,7 +8,7 @@ export default () => {
   return (
     <View>
       Index
-      <Button className={styles.bg}>Button</Button>
+      <TestCom className={styles.bg}>Index's is tomato</TestCom>
     </View>
   );
 };
